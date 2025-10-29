@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hello, journal 👋 — Michael’s Journal</title>
+  <meta name="description" content="First entry in my minimalist HTML/CSS journal." />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <h1><a href="../index.html" style="text-decoration:none;color:inherit;">Michael’s Journal</a></h1>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <button class="mode-toggle" aria-pressed="false" id="modeToggle" aria-label="Toggle dark mode">🌓</button>
+    </nav>
+  </header>
+  <main id="content" class="container">
+    <article class="prose" itemscope itemtype="https://schema.org/BlogPosting">
+      <header>
+        <h1 itemprop="headline">Hello, journal 👋</h1>
+        <p class="post-meta">
+          <time datetime="2025-10-01" itemprop="datePublished" class="post-date">Oct 1, 2025</time>
+          <span class="post-tags"><a href="#" class="tag">personal</a><a href="#" class="tag">starting</a></span>
+        </p>
+      </header>
+      <section itemprop="articleBody">
+        
+<p>Welcome to my new space. I’m keeping this intentionally simple: plain HTML and CSS, fast to load, easy to host.</p>
+<p>Goals for this journal:</p>
+<ul>
+  <li>Write a few times per week.</li>
+  <li>Keep entries short and focused.</li>
+  <li>Iterate on the design as I learn CSS.</li>
+</ul>
+<blockquote>“Simplicity is the ultimate sophistication.”</blockquote>
+
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Michael Tidrow.</p>
+  </footer>
+  <script>
+    const toggle = document.getElementById('modeToggle');
+    const saved = localStorage.getItem('color-scheme');
+    if (saved) document.documentElement.dataset.theme = saved;
+    toggle.addEventListener('click', () => {
+      const current = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = current;
+      localStorage.setItem('color-scheme', current);
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
