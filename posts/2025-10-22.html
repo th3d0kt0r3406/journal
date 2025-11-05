@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Small wins stack up — Michael’s Journal</title>
+  <meta name="description" content="A reflection on momentum and progress." />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <h1><a href="../index.html" style="text-decoration:none;color:inherit;">Michael’s Journal</a></h1>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <button class="mode-toggle" aria-pressed="false" id="modeToggle" aria-label="Toggle dark mode">🌓</button>
+    </nav>
+  </header>
+  <main id="content" class="container">
+    <article class="prose" itemscope itemtype="https://schema.org/BlogPosting">
+      <header>
+        <h1 itemprop="headline">October 22nd, 2025</h1>
+        <p class="post-meta">
+          <time datetime="2025-10-22" itemprop="datePublished" class="post-date">Oct 22nd, 2025</time>
+          <span class="post-tags"><a href="#" class="tag">Sleep Habits</a><a href="#" class="tag">ADHD & Dopamine</a><a href="#" class="tag">Motivation & Productivity</a></span>
+        </p>
+      </header>
+      <section itemprop="articleBody">
+
+<p>For some reason, I could not fall asleep last night until around 1:00am. The result was I woke up late this morning which resulted in coming late into the office around 11:00am. BUT.....I did come in which is an 
+improvement. Only 1 more day and that is three days this week. I need to improve my bedtime routine somehow so I can break this bad habit.</p>
+
+<p>
+  I have been doing research recently on fast dopamine versus slow dopamine. Fast dopamine examples are caffeine, video games, etc. while slow dopamine examples are things like DIY projects, reading, self-improvement, etc.
+  I am <bold>VERY</bold> guilty of falling victim to mindless scrolling, watching TV, or playing video games when there are a million other things I should be doing. I need to figure out a way to "remap" or rewire my brain to
+  replace these types of activities.
+</p>
+
+<p>
+  I am still struggling with motivation and productivity at work. I have been wondering if finding an outlet for creativity and building would help. Maybe coding a project on the side (see I did it)? Or more 3D printing? I
+  don't know but I do not feel excited anymore about much of anything. Just stuck and stagnant. I will not give up though. I am not built to give up. I might wallow for a little while, but I will get back up. Somehow that
+  is one thing that Dad taught me that is postitive. Maybe I should take lessons from that Michael Jordan commercial back in the 1990's where he said, "I’ve missed more than 9,000 shots in my career. I’ve lost almost 300 games.
+  Twenty-six times I’ve been trusted to take the game-winning shot and missed. I’ve failed over and over and over again in my life. And that is why I succeed."
+</p>
+
+<ul><p>Gratitude</p>
+  <li>Fall Weather</li>
+  <li>Airpod Pro 3's</li>
+  <li>Support from Stacey</li>
+</ul>
+
+<ul><p>Failures</p>
+  <li>Waking up late</li>
+  <li>Managing Adult Tasks</li>
+  <li>Being more outgoing</li>
+</ul>
+
+        </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Michael Tidrow.</p>
+  </footer>
+  <script>
+    const toggle = document.getElementById('modeToggle');
+    const saved = localStorage.getItem('color-scheme');
+    if (saved) document.documentElement.dataset.theme = saved;
+    toggle.addEventListener('click', () => {
+      const current = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = current;
+      localStorage.setItem('color-scheme', current);
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
