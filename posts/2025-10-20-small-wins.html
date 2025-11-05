@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Small wins stack up — Michael’s Journal</title>
+  <meta name="description" content="A reflection on momentum and progress." />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <h1><a href="../index.html" style="text-decoration:none;color:inherit;">Michael’s Journal</a></h1>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <button class="mode-toggle" aria-pressed="false" id="modeToggle" aria-label="Toggle dark mode">🌓</button>
+    </nav>
+  </header>
+  <main id="content" class="container">
+    <article class="prose" itemscope itemtype="https://schema.org/BlogPosting">
+      <header>
+        <h1 itemprop="headline">Small wins stack up</h1>
+        <p class="post-meta">
+          <time datetime="2025-10-20" itemprop="datePublished" class="post-date">Oct 20th, 2025</time>
+          <span class="post-tags"><a href="#" class="tag">reward guilt</a><a href="#" class="tag">motivation</a><a href="#" class="tag">gratitude</a></span>
+        </p>
+      </header>
+      <section itemprop="articleBody">
+        
+<p>Well, I missed a few days writing journaling. Ooopsie. I bought the Airpod Pro 3's today and $250 is SO much money that could have been used for other things. After I purchased them I immediately felt a giant wave
+  of guilt. It's funny when I was single, I would not have hesitated to purchase them and never would have felt guilt. Now with being back with Stacey and having a family full-time, I wonder what's going to happen that
+  will cause me to regret spending the money and think, "Man, I shouldn't have spend $250 on headphones." With that being said, it's so much nicer to have headphones that actually work instead of are "limping" along. My
+  old set of Airpods had been washed and chewed on by Hermione (she's the devil sometimes). The noise cancellation and transparaency modes didn't work any longer.</p>
+
+<p>I am still struggling with motivation recently at work. It feels like it's related to not creating or building anything. Just email, chat, meetings, blah blah blah. Early on after traferring from IT to the HRIS team,
+  I created and built so much because of new vendors or new needs from the business, but now with 2 major projects coming one after the other my position has evolved into just administrating and managing the integrations.
+  I am not 100% certain this position will ever return to the creating and building phase of the job like it was. I may need to start looking for the next steps in my career because currently I am very bored.
+</p>
+
+<p>Gratitude. I want to begin a habit of including 3 things at the end of each journal entry to remind myself. It is easy to get into the habit of complaining a ton and forgetting the things you should be grateful for.</p>
+
+<ul>
+  <li>Stacey</li>
+  <li>Flexible Job hours</li>
+  <li>Music</li>
+</ul>
+
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Michael Tidrow.</p>
+  </footer>
+  <script>
+    const toggle = document.getElementById('modeToggle');
+    const saved = localStorage.getItem('color-scheme');
+    if (saved) document.documentElement.dataset.theme = saved;
+    toggle.addEventListener('click', () => {
+      const current = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = current;
+      localStorage.setItem('color-scheme', current);
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
