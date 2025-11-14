@@ -18,7 +18,35 @@
       <button class="mode-toggle" aria-pressed="false" id="modeToggle" aria-label="Toggle dark mode">🌓</button>
     </nav>
   </header>
-
+   <main id="content" class="container" role="main">
+    <section aria-labelledby="compose">
+      <h2 id="compose">New entry</h2>
+      <form id="entryForm" class="entry-form">
+        <div class="field">
+          <label for="title">Title</label>
+          <input type="text" id="title" name="title" placeholder="Today’s tiny victory" required />
+        </div>
+        <div class="field-inline">
+          <div class="field">
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+          <div class="field">
+            <label for="tags">Tags (comma‑separated)</label>
+            <input type="text" id="tags" name="tags" placeholder="personal, reflection" />
+          </div>
+        </div>
+        <div class="field">
+          <label for="body">Body</label>
+          <textarea id="body" name="body" rows="10" placeholder="Free-write here. You can use simple line breaks; paragraphs will be auto-wrapped."></textarea>
+        </div>
+        <div class="actions">
+          <button type="button" id="saveToPosts" class="btn">Save to /posts…</button>
+          <button type="button" id="downloadHtml" class="btn secondary">Download .html</button>
+          <span class="hint">Tip: “Save to /posts…” uses the browser’s File System Access API (best in Chrome/Edge). You’ll be asked to pick your local <code>/posts</code> folder once.</span>
+        </div>
+      </form>
+    </section>
   <main id="content" class="container" role="main">
     <section aria-labelledby="recent">
       <h2 id="recent">Recent entries</h2>
