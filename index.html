@@ -91,11 +91,15 @@
     <p>&copy; <span id="year"></span> Michael Tidrow. All rights reserved.</p>
   </footer>
 
+  <!-- Load journal logic BEFORE dark mode script -->
+  <script src="assets/journal.js"></script>
+
   <script>
     // Dark mode toggle with localStorage persistence
     const toggle = document.getElementById('modeToggle');
     const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
     const saved = localStorage.getItem('color-scheme');
+
     if (saved) document.documentElement.dataset.theme = saved;
     else if (prefersDark) document.documentElement.dataset.theme = 'dark';
 
