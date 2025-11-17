@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Monday — Michael’s Journal</title>
+  <meta name="description" content="Using ChatGPT AI, I have successfully setup this website for my own personal use as a journal. I am hosting it using GitHub Pages. While I d" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <h1><a href="../index.html" style="text-decoration:none;color:inherit;">Michael’s Journal</a></h1>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <button class="mode-toggle" aria-pressed="false" id="modeToggle" aria-label="Toggle dark mode">🌓</button>
+    </nav>
+  </header>
+  <main id="content" class="container">
+    <article class="prose" itemscope itemtype="https://schema.org/BlogPosting">
+      <header>
+        <h1 itemprop="headline">Monday</h1>
+        <p class="post-meta">
+          <time datetime="2025-11-17" itemprop="datePublished" class="post-date">Nov 16, 2025</time>
+          <span class="post-tags"><a href="#" class="tag">career development</a><a href="#" class="tag">kinslea driving</a><a href="#" class="tag">thanksgiving 2025</a></span>
+        </p>
+      </header>
+      <section itemprop="articleBody">
+        <p>Using ChatGPT AI, I have successfully setup this website for my own personal use as a journal. I am hosting it using GitHub Pages. While I did not necessarily learn much HTML, CSS, and/or Javascript coding skills, I did learn quite a bit about operating and using GitHub which I believe will assist me in my career. There has still been no word about my position moving to the CFS (corporate finance system) team which does worry me, but given that we are in the middle of our Q4 time, I am not declaring "red alert" quite yet. Still.....I think it would be beneficial to add new skillsets to my repatoire in order to market myself outside of the company should it come to this. I truly do not want to leave JD FinishLine as I've been here the longest tenure of any company and I am proud of that, but I am bored in terms of challenges and if my compensation does not increase I will do what I must.</p>
+<p>Kinslea has a social security appointment tomorrow on the calendar, but after asking Stacey about it she said it is not necessary because we are still awaiting her medical records. While Kinslea does not have a vehicle to drive, I still believe that her obtaining her license would ease the burden on Stacey and I to drive her back and forth to Burlington for work. I should continue to follow-up on this with Stacey and Kinslea to push the needle.</p>
+<p>Thanksgiving is rapidly approaching with my family and I am 100% regretting it. There is tension between my family and Patrick's family due to a comment from Vanessa about "Stacey having a tight leash on me". Obviously, this is NOT the case but I can see from Patrick's family how this might look. I went from being a single man with very little responsibilities and a lot of free time which out of pure, for lack of a better term, desperation and lonliness, I spent some of my time with Patrick's family. Now that I am a full-time father, husband, etc. etc. I have very little free-time and in that very little free-time I prefer to spend in solitude vs. with others. Hell, there are times where I don't even want to spend my free-time with my family. Now I can see where this comes across as now that I'm back with Stacey she has a "tight leash" on me, but that is just simply not true. Maybe I should bring it up and try to have a healthy discussion about it, but I don't want to hurt Stacey's feelings by mistake. For some reason, she has been very "worrisome" recently thinking I am cheating on her or wanting to leave her. Again, this could NOT be further from the truth. For the 1st time in my life, I feel satisfied in the romance/relationship department. Could our relationship be better....of course. We are not perfect, but for better or worse I truly love and adore Stacey with all of my heart and soul. I cannot wait to marry her and grow old.</p>
+<p>Gratitude<br>1. IT Friends (assistance setting up a WD Integrations Dashboard)<br>2. Open conference rooms<br>3. Star Wars audiobooks</p>
+<p>Improvements<br>1. Adulting Tasks (call the damn company Michael)<br>2. Brushing Teeth habit<br>3. Scheduling 1 hour per day to learn something new</p>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Michael Tidrow.</p>
+  </footer>
+  <script>
+    const toggle = document.getElementById('modeToggle');
+    const saved = localStorage.getItem('color-scheme');
+    if (saved) document.documentElement.dataset.theme = saved;
+    toggle.addEventListener('click', () => {
+      const current = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = current;
+      localStorage.setItem('color-scheme', current);
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
